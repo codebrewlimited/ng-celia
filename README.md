@@ -31,4 +31,4 @@ More detailed developer documentation and contribution guidelines for code contr
 
 ## License :memo:
 
-[MIT](https://www.github.com/allianz/ng-aquila/blob/main/LICENSE) License
+[MIT](https://www.github.com/codebrewlimited/ng-celia/blob/main/LICENSE) License
