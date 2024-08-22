@@ -1,0 +1,121 @@
+/** @format */
+
+@font-face {
+  font-family: 'Axier Sans';
+  src: url('../fonts/brandon/23a8744a-d732-4204-a2df-d302e1b73979-webfont.woff2') format('woff2'),
+    url('../fonts/brandon/23a8744a-d732-4204-a2df-d302e1b73979-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Axier Sans';
+  src: url('../fonts/brandon/1594f742-fc2a-49d5-a92f-2de5aa97ddc1-webfont.woff2') format('woff2'),
+    url('../fonts/brandon/1594f742-fc2a-49d5-a92f-2de5aa97ddc1-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../fonts/product-sans/product_sans_bold-webfont.woff2') format('woff2'),
+    url('../fonts/product-sans/product_sans_bold-webfont.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Product Sans';
+  src: url('../fonts/product-sans/product_sans_regular-webfont.woff2') format('woff2'),
+    url('../fonts/product-sans/product_sans_regular-webfont.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:100,200,300,400,500,600,700&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap');
+// @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@font-face {
+  font-family: 'Allianz Neo';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../fonts/neo/AllianzNeoW04-Light.woff2') format('woff2'),
+    url('../fonts/neo/AllianzNeoW04-Light.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Allianz Neo';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../fonts/neo/AllianzNeoW04-LightItalic.woff2') format('woff2'),
+    url('../fonts/neo/AllianzNeoW04-LightItalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Allianz Neo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/neo/AllianzNeoW04-Regular.woff2') format('woff2'),
+    url('../fonts/neo/AllianzNeoW04-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Allianz Neo';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/neo/AllianzNeoW04-Italic.woff2') format('woff2'),
+    url('../fonts/neo/AllianzNeoW04-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Allianz Neo';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/neo/AllianzNeoW04-SemiBold.woff2') format('woff2'),
+    url('../fonts/neo/AllianzNeoW04-SemiBold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Allianz Neo';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url('../fonts/neo/AllianzNeoW04-SemiBoldIt.woff2') format('woff2'),
+    url('../fonts/neo/AllianzNeoW04-SemiBoldIt.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Allianz Neo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/neo/AllianzNeoW04-Bold.woff2') format('woff2'),
+    url('../fonts/neo/AllianzNeoW04-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Allianz Neo';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/neo/AllianzNeoW04-BoldItalic.woff2') format('woff2'),
+    url('../fonts/neo/AllianzNeoW04-BoldItalic.woff') format('woff');
+}
+
+html {
+  // font-family: 'Allianz Neo', sans-serif;
+  // font-size: 62.5%;
+  font-display: swap;
+}

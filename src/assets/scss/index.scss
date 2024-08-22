@@ -1,0 +1,111 @@
+/**
+ * /*--------------------------------------------------------------
+ * # Variables, functions and mixins
+ * --------------------------------------------------------------
+ *
+ * @format
+ */
+
+@import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins', 'abstracts/include-media';
+
+/*--------------------------------------------------------------
+1.0 Normalize
+	* normalize.css v7.0.0 | MIT License
+	* github.com/necolas/normalize.css
+--------------------------------------------------------------*/
+@import 'normalize';
+
+/*--------------------------------------------------------------
+# Base
+--------------------------------------------------------------*/
+@import 'base/base';
+@import 'base/fonts';
+
+/*--------------------------------------------------------------
+# Typography
+--------------------------------------------------------------*/
+@import 'base/typography';
+
+/*--------------------------------------------------------------
+# Helpers
+--------------------------------------------------------------*/
+@import 'base/helpers';
+
+/*--------------------------------------------------------------
+# Forms
+--------------------------------------------------------------*/
+// @import "components/forms";
+
+/*--------------------------------------------------------------
+# Buttons
+--------------------------------------------------------------*/
+@import 'components/buttons';
+@import 'tools/animations';
+@import 'tools/icons';
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+// @import "layout/header";
+
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+// @import "layout/hero";
+
+/*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+// @import "layout/features";
+
+/*--------------------------------------------------------------
+# Pricing
+--------------------------------------------------------------*/
+// @import "layout/pricing";
+
+/*--------------------------------------------------------------
+# CTA
+--------------------------------------------------------------*/
+// @import "layout/cta";
+
+/*--------------------------------------------------------------
+# Site content
+--------------------------------------------------------------*/
+// @import "layout/main";
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+// @import "layout/footer";
+
+@mixin scroll {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+
+  ::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+
+  ::-webkit-scrollbar-thumb:vertical,
+  ::-webkit-scrollbar-thumb:horizontal {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+    min-height: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:vertical:active,
+  ::-webkit-scrollbar-thumb:horizontal:active {
+    background: rgba(0, 0, 0, 0.3);
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+  }
+}
+
+@include scroll;

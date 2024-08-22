@@ -1,0 +1,27 @@
+/** @format */
+
+.axier-tabs {
+  border-bottom: 1px solid #cfdbe6;
+  margin-top: 30px;
+  // height: 54px;
+  margin-bottom: 20px;
+  clear: both;
+
+  .tab-ele {
+    padding: 17px 20px;
+    display: inline-block;
+    font-weight: 500;
+    color: #617083;
+    transition: color 0.45s;
+    cursor: pointer;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    &.active {
+      color: color(primary, 3);
+      border-bottom: 2px solid color(primary, 3);
+    }
+  }
+}

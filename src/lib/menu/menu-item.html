@@ -1,0 +1,49 @@
+<!-- @format -->
+
+<div
+  class="navigation__item"
+  [ngClass]="{
+    'navigation__item--opened': isOpen,
+    'navigation__item--openable': item.sub_items?.length
+  }"
+>
+  <!-- 'navigation__item--active': rla.isActive, -->
+
+  <div class="navigation__item__header">
+    <a
+      class="navigation__item__link"
+      [routerLink]="item.href"
+      routerLinkActive=""
+      [routerLinkActiveOptions]="{ exact: !item.sub_items?.length }"
+      #rla="routerLinkActive"
+    >
+      <span class="navigation__item__icon" [ngClass]="item.icon"></span>
+      <span class="navigation__item__label">
+        <span [textContent]="item.title"></span>
+      </span>
+      <a
+        class="navigation__item__expand icon-arrow_down_2"
+        *ngIf="item.sub_items?.length"
+        href="javascript:void(0)"
+        (click)="isOpen = !isOpen"
+      ></a>
+    </a>
+  </div>
+  <div class="navigation__item__content">
+    <div class="navigation__item__content__inner">
+      <a
+        class="navigation__item__link"
+        *ngFor="let sub_item of item.sub_items; let i = index"
+        [ngClass]="{
+          'navigation__item__link--active': !i
+        }"
+        [href]="sub_item.href"
+      >
+        <span class="navigation__item__icon">
+          <span class="navigation__item__icon__dot"></span>
+        </span>
+        <span [textContent]="sub_item.title"></span>
+      </a>
+    </div>
+  </div>
+</div>

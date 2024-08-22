@@ -1,0 +1,171 @@
+/** @format */
+
+.button {
+  display: inline-flex;
+  @include font-family(button);
+  @include font-size(7, mobile, true, false, true);
+  font-size: 12px;
+  font-weight: 600;
+  // @include font-weight(bold);
+  // @if (get-font-size(7, desktop) != get-font-size(7, mobile)) {
+  //   @include media(">medium") {
+  //     @include font-size(7, desktop, true, false, true);
+  //   }
+  // }
+  line-height: 12px;
+  text-decoration: none !important;
+  background-color: color(bg, 1);
+  color: color(primary, 1);
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  -webkit-box-pack: center;
+  justify-content: center;
+  padding: 16px 32px;
+  text-align: center;
+  white-space: nowrap;
+  transition: background-color 0.3s ease-in-out;
+
+  &:active,
+  &:focus {
+    outline: 0;
+  }
+
+  &::before {
+    border-radius: 2px;
+  }
+
+  &:disabled {
+    color: color(typography, 1);
+    background: mix(color(typography, 3), color(typography, 4));
+    background: linear-gradient(65deg, color(typography, 3) 0, color(typography, 4) 100%);
+    opacity: 0.5;
+  }
+
+  &--circle {
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0px 9px;
+
+    .button--circle__icon {
+      width: 5.89rem;
+      height: 5.89rem;
+      box-shadow: rgba(25, 28, 31, 0.04) 0px 0.5rem 1rem 0px, rgba(25, 28, 31, 0.08) 0px 0.9rem 2rem 0px,
+        rgba(25, 28, 31, 0.05) 0px 1px 0px 0px inset;
+      color: inherit;
+      border-radius: inherit;
+      -webkit-transition: background-color 300ms cubic-bezier(0.15, 0.5, 0.5, 1) 0s,
+        box-shadow 200ms cubic-bezier(0.4, 0.3, 0.8, 0.6) 0s, -webkit-transform 300ms cubic-bezier(0.15, 0.5, 0.5, 1) 0s;
+      transition: background-color 300ms cubic-bezier(0.15, 0.5, 0.5, 1) 0s,
+        box-shadow 200ms cubic-bezier(0.4, 0.3, 0.8, 0.6) 0s, -webkit-transform 300ms cubic-bezier(0.15, 0.5, 0.5, 1) 0s;
+      transition: transform 300ms cubic-bezier(0.15, 0.5, 0.5, 1) 0s,
+        background-color 300ms cubic-bezier(0.15, 0.5, 0.5, 1) 0s, box-shadow 200ms cubic-bezier(0.4, 0.3, 0.8, 0.6) 0s;
+      transition: transform 300ms cubic-bezier(0.15, 0.5, 0.5, 1) 0s,
+        background-color 300ms cubic-bezier(0.15, 0.5, 0.5, 1) 0s, box-shadow 200ms cubic-bezier(0.4, 0.3, 0.8, 0.6) 0s,
+        -webkit-transform 300ms cubic-bezier(0.15, 0.5, 0.5, 1) 0s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.2rem;
+      color: color(typography, 1);
+      color: #1f0882;
+    }
+
+    .button--circle__placeholder {
+      padding: 10px;
+      font-size: 1.23rem;
+      // color: color(typography, 1);
+      color: rgb(206, 213, 219);
+    }
+  }
+}
+
+.button-shadow {
+  box-shadow: 0 8px 16px rgba(35, 34, 65, 0.12);
+  // position: relative;
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   right: 0;
+  //   bottom: 0;
+  //   left: 0;
+  //   box-shadow: 0 8px 16px rgba(color(typography, 1), 0.12);
+  //   mix-blend-mode: multiply;
+  //   transition: box-shadow 0.15s ease;
+  // }
+
+  // &:hover {
+  //   &::before {
+  //     box-shadow: 0 8px 16px rgba(color(typography, 1), 0.25);
+  //   }
+  // }
+}
+
+.button-sm {
+  padding: 8px 24px;
+  height: 32px;
+
+  &.button-shadow {
+    &::before {
+      box-shadow: 0 4px 16px rgba(color(typography, 1), 0.12);
+    }
+
+    &:hover {
+      &::before {
+        box-shadow: 0 4px 16px rgba(color(typography, 1), 0.25);
+      }
+    }
+  }
+}
+
+.button-primary {
+  color: color(typography, 1i) !important;
+  transition: background 0.15s ease;
+}
+
+.button-primary {
+  background: mix(color(primary, 2), color(primary, 3));
+  background: linear-gradient(65deg, color(primary, 2) 0, color(primary, 3) 100%);
+
+  &:hover {
+    background: lighten(mix(color(additional, 1), color(additional, 2)), 1%);
+    background: linear-gradient(65deg, lighten(color(additional, 1), 1%) 0, lighten(color(additional, 2), 1%) 100%);
+  }
+
+  &.button-shadow {
+    &::before {
+      box-shadow: 0 8px 16px rgba(color(additional, 1), 0.25);
+    }
+
+    &:hover {
+      &::before {
+        box-shadow: 0 8px 16px rgba(color(additional, 1), 0.4);
+      }
+    }
+  }
+
+  .button-sm {
+    &.button-shadow {
+      &::before {
+        box-shadow: 0 4px 16px rgba(color(additional, 1), 0.25);
+      }
+
+      &:hover {
+        &::before {
+          box-shadow: 0 4px 16px rgba(color(additional, 1), 0.4);
+        }
+      }
+    }
+  }
+}
+
+.button-block {
+  display: flex;
+}

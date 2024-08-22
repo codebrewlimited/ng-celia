@@ -1,0 +1,9 @@
+<!-- @format -->
+<div class="navigation__section">
+  <div class="navigation__section__title" *ngIf="section.title">
+    <span [textContent]="section.title"></span>
+  </div>
+  <div class="navigation__section__content">
+    <cb-menu-item *ngFor="let item of section.items" [item]="item"></cb-menu-item>
+  </div>
+</div>

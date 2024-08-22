@@ -1,0 +1,69 @@
+/** @format */
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@import '~@angular/material/theming';
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat-core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$axier-primary: mat-palette($mat-indigo);
+$axier-accent: mat-palette($mat-pink, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$axier-warn: mat-palette($mat-red);
+
+// Create the theme object (a Sass map containing all of the palettes).
+$axier-theme: mat-light-theme($axier-primary, $axier-accent, $axier-warn);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include angular-material-theme($axier-theme);
+
+// 0 - Abstracts
+@import '0-abstracts/functions';
+@import '0-abstracts/include-media';
+@import '0-abstracts/mixins';
+@import '0-abstracts/variables';
+
+// 1 - Tools
+@import '1-tools/animations';
+@import '1-tools/fonts';
+@import '1-tools/icons';
+@import '1-tools/libs';
+@import '1-tools/overridelibs';
+@import '1-tools/mixins';
+
+// 2 - Basics
+@import '2-basics/app';
+@import '2-basics/sidebar';
+@import '2-basics/navbar';
+@import '2-basics/normalize';
+@import '2-basics/basics';
+@import '2-basics/links';
+@import '2-basics/selection-colors';
+@import '2-basics/typography';
+
+// 3 - Components
+@import '3-components/buttons';
+@import '3-components/content-placeholder';
+@import '3-components/forms';
+@import '3-components/loader';
+@import '3-components/modals';
+@import '3-components/overlay';
+@import '3-components/panels';
+@import '3-components/scrollbar';
+@import '3-components/tables';
+@import '3-components/tabs';
+@import '3-components/whatever';
+
+// 4 - Modules
+
+// 5 - Pages

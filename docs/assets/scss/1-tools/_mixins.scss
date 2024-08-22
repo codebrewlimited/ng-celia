@@ -1,0 +1,63 @@
+// Mixins
+
+@mixin placeholder($color, $transition) {
+    ::-webkit-input-placeholder {
+        color: $color;
+        transition: $transition;
+    }
+
+    :-moz-placeholder {
+        color: $color;
+        transition: $transition;
+    }
+
+    ::-moz-placeholder {
+        color: $color;
+        transition: $transition;
+    }
+}
+
+@mixin flex($justifyContent, $alignItems) {
+    display: flex;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
+@mixin shutter-out-horizontal($backgroundColor, $activeColor) {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    background: $backgroundColor;
+    transition-property: color;
+    transition-duration: 0.3s;
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $activeColor;
+        transform: scaleX(0);
+        transform-origin: 50%;
+        transition-property: transform;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: white;
+
+        &:before {
+            transform: scaleX(1);
+        }
+    }
+}

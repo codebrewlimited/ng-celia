@@ -1,0 +1,16 @@
+<!-- @format -->
+
+<div class="">
+  <ul class="cb-tabs" [ngClass]="'cb-tabs--' + justify">
+    <li
+      *ngFor="let tab of tabs"
+      (ngInit)="init(tab)"
+      class="cb-tabs__i"
+      [ngClass]="{ 'cb-tabs__i--active': tab.active }"
+      (click)="selectTab(tab)"
+    >
+      <span [innerText]="tab.tabTitle"></span>
+    </li>
+  </ul>
+  <ng-content></ng-content>
+</div>

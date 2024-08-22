@@ -1,0 +1,186 @@
+/** @format */
+
+// --------------------------------------------
+// Colors -------------------------------------
+// Usage example: color(primary, main)
+// --------------------------------------------
+$color: (
+  typography: (
+    1: #464b64,
+    2: #768696,
+    3: #9bacbd,
+    4: #8a8ea4,
+    1i: #fff,
+    2i: rgba(#fff, 0.8),
+  ),
+  bg: (
+    1: #ffffff,
+    2: #f5f9fc,
+    3: #dde7ef,
+  ),
+  primary: (
+    1: #6b5aed,
+    2: #6162ff,
+    3: #6438fe,
+    4: #f8f7ff,
+  ),
+  secondary: (
+    1: #61effd,
+    2: #93f4fe,
+    3: #2feafc,
+  ),
+  tertiary: (
+    1: #08cdc4,
+    2: #ffcf7b,
+    3: #fe7e1f,
+  ),
+  additional: (
+    1: #7074ff,
+    2: #5e9eff,
+    3: #6efacc,
+  ),
+  danger: (
+    1: #ff6b6b,
+  ),
+  anchor: (
+    1: #5e9eff,
+  ),
+);
+
+// --------------------------------------------
+// Typography ---------------------------------
+// --------------------------------------------
+$font__family: (
+  base: 'Inter, sans-serif',
+  heading: '"Avenir LT Std", sans-serif',
+  code: 'Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace',
+  pre: '"Courier 10 Pitch", Courier, monospace',
+  button: 'Inter, sans-serif',
+);
+
+$font__sizes: (
+  alpha: (
+    52px,
+    62px,
+    -0.1px,
+  ),
+  // font-size, line-height, kerning (use '0' if don't want to output any kerning)
+    beta:
+    (
+      42px,
+      52px,
+      -0.1px,
+    ),
+  gamma: (
+    36px,
+    46px,
+    -0.1px,
+  ),
+  delta: (
+    24px,
+    34px,
+    -0.1px,
+  ),
+  epsilon: (
+    20px,
+    30px,
+    -0.1px,
+  ),
+  zeta: (
+    18px,
+    27px,
+    -0.1px,
+  ),
+  eta: (
+    14px,
+    22px,
+    0px,
+  ),
+  theta: (
+    1.4rem,
+    20px,
+    0px,
+  ),
+);
+
+$button__font__size: (
+  s: 12px,
+  sm: 14px,
+  default: 14px,
+  l: 16px,
+);
+
+$font__scale: (
+  desktop: (
+    // i.e. $breakpoint__m + $breakpoint__l (600 - 1024)
+      1: map-get($font__sizes, alpha),
+    // H1
+      2: map-get($font__sizes, beta),
+    // H2
+      3: map-get($font__sizes, gamma),
+    // H3
+      4: map-get($font__sizes, delta),
+    // H4, H5, H6
+      5: map-get($font__sizes, epsilon),
+    // Body
+      6: map-get($font__sizes, zeta),
+    // Text small
+      7: map-get($font__sizes, eta),
+    // Text smaller, buttons
+      8: map-get($font__sizes, theta) // Footer area,,,,,,
+  ),
+  mobile: (
+    // i.e. $breakpoint__xs + $breakpoint__s (up to 600)
+      1: map-get($font__sizes, beta),
+    // H1
+      2: map-get($font__sizes, gamma),
+    // H2
+      3: map-get($font__sizes, delta),
+    // H3
+      4: map-get($font__sizes, epsilon),
+    // H4, H5, H6
+      5: map-get($font__sizes, epsilon),
+    // Body
+      6: map-get($font__sizes, zeta),
+    // Text small
+      7: map-get($font__sizes, eta),
+    // Text smaller, buttons
+      8: map-get($font__sizes, theta) // Footer area,,,,,,
+  ),
+);
+
+$font__weight: (
+  regular: 400,
+  // font__weight(regular)
+    medium: 500,
+  // font__weight(medium)
+    semibold: 600,
+  // font__weight(semibold)
+    bold: 700 // font__weight(bold),,,,,,
+);
+
+// --------------------------------------------
+// Structure ----------------------------------
+// --------------------------------------------
+$content__padding: (
+  mobile: 16px,
+  desktop: 24px,
+);
+
+$app: (
+  menu: (
+    primary: 70px // secondary: ,,,
+  ),
+);
+
+$content__padding-lg: 20px;
+$container__width: 1080px;
+$container__width-sm: 800px;
+$sidebar-width: 320px;
+
+$space: (
+  1: 10px,
+  2: 20px,
+  3: 30px,
+  4: 40px,
+);
