@@ -106,7 +106,6 @@
     "user_id": "github|20155291",
     "name": "iestyn02@gmail.com",
     "identities": [{
-      "access_token": "130b24f20cda0f0c504e3773f52e1af0e83bb99b",
       "provider": "github",
       "user_id": "20155291",
       "connection": "github",
@@ -137,7 +136,6 @@
     "given_name": "Iestyn",
     "identities": [{
       "provider": "google-oauth2",
-      "access_token": "ya29.ImWyB2Uw2ufeUlD6pqrzAZWUEiY8dMzyN_Jle1-PfF_UI9gVTQVzKDkdVSLJjGeRbiaGf6B_HTOfwt9bchkYDI-vxh7o5Y-inuTeaRnhzbNBqtvqaYDvjOzBTUWYt-l8kCkamFdKnQ",
       "expires_in": 3599,
       "user_id": "103634678712135217470",
       "connection": "google-oauth2",
@@ -166,7 +164,6 @@
     "nickname": "slytton285",
     "identities": [{
       "provider": "google-oauth2",
-      "access_token": "ya29.GmF2B1adKeJv_A5lmxv0gDH3ZrYbhq2luLR0FxRKfELDYIAiS5zHFoXJPajDzaUly1xFVEfUwdVCyWaxUgijrqVLiUdd-oOZAGuwewIUHUywIYrRchFyOj-yioegD-_vnIMD",
       "expires_in": 3600,
       "user_id": "117976362657032363869",
       "connection": "google-oauth2",
@@ -217,7 +214,6 @@
     "user_id": "github|19391021",
     "name": "padraigspartan117@gmail.com",
     "identities": [{
-      "access_token": "499daf4b3665ba19e8c3a53e224cf37ca60293cd",
       "provider": "github",
       "user_id": "19391021",
       "connection": "github",
@@ -245,7 +241,6 @@
     "nickname": "iestyndalli",
     "identities": [{
       "provider": "google-oauth2",
-      "access_token": "ya29.GlsrB5_uNQ4jCCBE5IAPqNLp7mChxJ55jHTaUfgtBVnK3c6s1EpWba5sOKprlT05hq3EZVOaeTM1g04fufWh_2a-ABMbxth_wKwAg_IokFykDmD8PhYhFY_vnQYV",
       "expires_in": 3600,
       "user_id": "108053119771984591307",
       "connection": "google-oauth2",
@@ -269,7 +264,6 @@
     "nickname": "padraigconnolly95",
     "identities": [{
       "provider": "google-oauth2",
-      "access_token": "ya29.GlsDBl3uVdwk1LpO-AVv2VPKaSNccKafmQPW6tCQOVSAT1BUwj1H4x-w-j4Wsia4pTHeXRr4PrR-wtJJwfplZrl4I4WtXuD571L3OzklfUiIf0qFEv67wl8tBOij",
       "expires_in": 3600,
       "user_id": "114242332389692830551",
       "connection": "google-oauth2",
